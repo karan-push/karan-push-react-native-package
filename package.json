@@ -53,7 +53,7 @@
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
     "@types/react": "~17.0.21",
-    "@types/react-native": "0.68.0",
+    "@types/react-native": "^0.69.4",
     "@types/react-native-video": "^5.0.14",
     "@types/styled-components": "^5.1.25",
     "@types/styled-components-react-native": "^5.1.3",
