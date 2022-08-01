@@ -205,7 +205,7 @@ const ViewNotificationItem = ({
                   style={[styles.backgroundVideo, contentYoutubeStyle]}
                 />
               ) : (
-                <View style={[styles.contentVid, contentVidStyle]}>
+                <View style={[contentVidStyle]}>
                   <View style={[styles.msgVid, contentMsgVidStyle]}>
                     <Video
                       resizeMode={containMode}
@@ -270,7 +270,6 @@ const ViewNotificationItem = ({
 const styles = StyleSheet.create({
   backgroundVideo: {
     position: 'relative',
-    width: '100%',
     aspectRatio: 1,
     top: 0,
     bottom: 0,
@@ -286,7 +285,6 @@ const styles = StyleSheet.create({
     borderRadius: GLOBALS.ADJUSTMENTS.FEED_ITEM_RADIUS,
   },
   header: {
-    width: '100%',
     paddingVertical: 7,
     paddingHorizontal: 10,
     backgroundColor: GLOBALS.COLORS.SLIGHTER_GRAY,
@@ -335,16 +333,12 @@ const styles = StyleSheet.create({
   contentLoader: {
     margin: 20,
   },
-  contentVid: {
-    width: '100%',
-  },
   msgVid: {
     borderColor: GLOBALS.COLORS.SLIGHT_GRAY,
     backgroundColor: GLOBALS.COLORS.SLIGHTER_GRAY,
     borderBottomWidth: 1,
   },
   contentImg: {
-    width: '100%',
     aspectRatio: 2,
   },
   msgImg: {
@@ -390,7 +384,6 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     resizeMode: 'cover',
-    width: '100%',
     height: '100%',
     overflow: 'hidden',
   },
